@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.developer.dinhduy.chatapp.StartActivity">
+
+    <TextView
+        android:id="@+id/Name_App"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:gravity="center"
+        android:text=" LIFE BOOK"
+        android:textStyle="bold"
+        android:textColor="#ffe100"
+        android:textSize="35sp" />
+
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/btn_Register"
+        android:layout_width="250dp"
+        android:textColor="#0033ff"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_Have_accout"
+        android:layout_alignStart="@+id/btn_Have_accout"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_style"
+        android:text="Register New Account "
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_Have_accout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button_style"
+        android:text=" I have Account "
+        android:textColor="#1909f9"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

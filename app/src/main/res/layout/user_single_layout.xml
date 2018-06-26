@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_friends"
+        android:layout_width="103dp"
+        android:layout_height="104dp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/id_name_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@id/img_friends"
+        android:text="Họ và tên"
+        android:textColor="#0c23f5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/id_date_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_name_friends"
+        android:layout_toRightOf="@+id/img_friends"
+        android:text="Date become friends"
+        android:textColor="#f000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/id_date_friends"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="84dp"
+        app:srcCompat="@drawable/online" />
+
+</RelativeLayout>

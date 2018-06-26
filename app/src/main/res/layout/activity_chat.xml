@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <include
+        android:id="@+id/layout_Bar_chat"
+        layout="@layout/tool_bar_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/layout_Bar_chat"
+        android:id="@+id/all_chat"
+        android:layout_width="match_parent"
+        android:layout_height="466dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="47dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <!--  <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:background="#00ffffff"
+            app:srcCompat="@drawable/add" />  -->
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="nội dung"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="30"
+            android:minLines="10"
+            android:scrollbars="vertical"
+
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textColorHint="@android:color/background_dark"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/send" />
+    </LinearLayout>
+
+
+</RelativeLayout>

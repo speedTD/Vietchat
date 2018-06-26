@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#6244ec"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/Profile_name"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="199dp"
+        android:gravity="center"
+        android:text="Display name" />
+
+    <ImageView
+
+        android:id="@+id/Profle_picture"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button_style"
+        android:text="Kết Bạn Bro"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/Profile_CountFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:gravity="center"
+        android:text="Total Bro"
+        android:textColor="#42f506"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/Profile_About"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="About"
+        android:textColor="#27f410"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btndeline"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:text="Deline" />
+
+
+</RelativeLayout>
